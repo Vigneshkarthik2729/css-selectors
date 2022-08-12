@@ -1,0 +1,97 @@
+/* Universal selector */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* simple selector */
+h1{
+    color: blueviolet;
+    border: 2px solid #222;
+}
+
+#para{
+    color: blue;
+}
+
+.head{
+    color: chartreuse;
+    border: none;
+    text-align: center;
+}
+
+h2,h4{
+    font-style: italic;
+    border: 2px solid yellowgreen;
+    fill: blueviolet;
+}
+
+/* combinator */
+section p{
+    background-color: orange;
+}
+
+div > p{
+    color:coral ;
+}
+
+div + p{
+    background-color: yellow;
+}
+
+div~p{
+    background-color: yellow;
+}
+
+/* pseudo-class */
+a:link{
+    color: black;
+}
+a:visited{
+    color:yellow;
+}
+a:hover{
+    color:orange;
+}
+a:active{
+    color: red;
+}
+
+section:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+/* pseudo-element */
+p::first-line{
+ background-color: cadetblue;   
+}
+
+p::first-letter{
+    font-size:20px ;
+    font-weight: bold;
+}
+h4::before{
+    content: url(https://www.macmillandictionaryblog.com/wp-content/uploads/2017/07/emoji-810x514.jpg);
+}
+h4::selection{
+    color: white;
+    background-color: green;
+}
+
+/* attribute */
+a[target=_blank]{
+    background-color: yellow;
+}
+
+a[class]{
+    background-color: aqua;
+}
+p[class~="d"]{
+    color: greenyellow;
+}
+
+a[class|="hello"]{
+    font-style: italic;
+}
